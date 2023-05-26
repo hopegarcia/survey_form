@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--This is the Form Page-->
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Metal Mania Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Caudex&family=Jolly+Lodger&family=Metal+Mania&display=swap" rel="stylesheet">
+
+<!--Jolly Lodger Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Caudex&family=Jolly+Lodger&display=swap" rel="stylesheet">
+
+
+  <title>Order Form</title>
+  <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+  <div class="box">
+    
+    <div class="form">
+      <h2>Welcome To The Secret Weapons Shop</h2>
+      <p id="description">The Finest Crafstmanship and Unmatched Power</p>
+
+
+    <!-- <div class="container"> -->
+
+      <form action="page3-done.html" method="GET"
+       id="survey-form">
+        <!--wont do anything since we don't have any server setup-->
+
+    <!--Radio Button-->
+    <div class="item">
+      <p>Select Your Order</p>
+      <label for="radio">Metal:</label>
+
+    <div class="radio">
+      <input type="radio" id="gold" name="radio=" value="gold">
+      <label for="gold">Gold</label>
+      <br>
+      
+      <input type="radio" id="silver" name="radio=">
+      <label for="silver">Silver</label>
+      <br>
+
+      <input type="radio" id="bronze" name="radio=" value="bronze">
+      <label for="bronze">Bronze</label>
+
+    </div>
+    </div>
+    
+
+
+    
+    <!--Drop Down Selector-->
+    
+    <div class="item">
+      <p>Select Weapon Type</p>
+      <label for="dropDown"></label>
+
+      <select id="dropDown" name="dropDown">
+        <option value="sword">Sword</option>
+        <option value="dagger">Dagger</option>
+        <option value="bownarrow">Bow & Arrow</option>
+        <option value="axe">Axe</option>
+        <option value="hammer">Hammer</option>
+      </select>
+
+    </div>
+
+
+    <!--Check Box-->
+    <div class="item">
+      <p>Select The Following Elements & Enchantments for Additional Stats:</p>
+
+      <input type="checkbox" id="check1" name="check1" value="check1">
+      <label for="check1">Centaur's Hooves (+dexterity +range)</label>
+      <!--the purpose of the value attribute: when the form is submitted the POST data is assembled as a name-value pair-->
+
+      <br>
+
+      <input type="checkbox" id="check2" name="check2" value="check2">
+      <label for="check2">Basilisk Tears (+stun +MP)</label>
+
+      <br>
+
+      <input type="checkbox" id="check3" name="check3" value="check3">
+      <label for="check3">Dragon Claw (+damage +HP)</label>
+
+      <br>
+      
+      <input type="checkbox" id="check4" name="check4" value="check4">
+      <label for="check4">Goblin's Tongue (+int +strength)</label>
+
+      <br>
+      
+      <input type="checkbox" id="check5" name="check5" value="check5">
+      <label for="check5">Phoenix Feather (+HP +MP)</label>
+
+    </div>
+
+
+    <!--Text Area-->
+    <div class="item">
+    <p class="item">Complete Address:</p>
+      <br>
+    <textarea id="textArea" name="textArea" rows="7" cols="25" placeholder="Insert Text Here" maxlength="100"></textarea>
+    </div>
+
+
+      <!--Email-->
+    <div class="item">
+      <p>Fill Out Your Contact Details For The Order</p>
+      <label for="email">Email:</label>
+      <br>
+      <input type="email" id="email" size="22" name="email" placeholder="elon_musk@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+      >
+      <br>
+      <br>
+
+      <!--Contact Number-->
+
+      <label for="tel">Contact Number:</label>
+      <input type="number" id="number" name="tel" placeholder="(+123) 456 789 012" maxlength="12">
+      </div>
+
+ 
+      <!--Next Button-->
+      <input type="submit" id="submit" value="done">
+    </div>
+    <div>
+    </form>
+
+     
+
+    </div>
+
+
+      
+
+</body>
+</html>
